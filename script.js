@@ -1,6 +1,9 @@
 /* ═══════════════════════════════════════
    PORTFOLIO — script.js
 ═══════════════════════════════════════ */
+window.addEventListener('DOMContentLoaded', () => {
+  emailjs.init('pGAHu7meCgDAWWyI7');
+});
 
 /* ── Loader ── */
 window.addEventListener('load', () => {
@@ -104,11 +107,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const roles = [
   'Web Developer',
   'IT Student',
-  'UI Enthusiast',
   'Problem Solver',
   'Frontend Developer',
 ];
-let roleIdx = 0, charIdx = 0, deleting = false, pauseTimer = null;
+let roleIdx = 0, charIdx = 0, deleting = false;
 const typedEl = document.getElementById('typed');
 
 function typeEffect() {
@@ -249,22 +251,43 @@ if (contactForm) {
     btnLoader.classList.remove('hidden');
 
     // Simulate API call — replace this with EmailJS / Formspree
-    await new Promise(resolve => setTimeout(resolve, 1800));
+    //await new Promise(resolve => setTimeout(resolve, 1800));
+      try {
+     await emailjs.send(
+       'service_p7v18fj',
+       'template_wipo9od',
+       {
+         from_name: nameInput.value,
+         from_email: emailInput.value,
+         message: msgInput.value,
+       }
+        );
 
-    // Success
-    submitBtn.classList.add('hidden');
-    formSuccess.classList.remove('hidden');
-    contactForm.reset();
+     // Success
+     submitBtn.classList.add('hidden');
+     formSuccess.classList.remove('hidden');
+     contactForm.reset();
 
-    // Reset after 5s
-    setTimeout(() => {
-      submitBtn.disabled = false;
-      submitBtn.classList.remove('hidden');
-      formSuccess.classList.add('hidden');
-      btnText.textContent = 'Send Message';
-      btnIcon.classList.remove('hidden');
-      btnLoader.classList.add('hidden');
-    }, 5000);
+     // Reset after 5s
+     setTimeout(() => {
+       submitBtn.disabled = false;
+       submitBtn.classList.remove('hidden');
+       formSuccess.classList.add('hidden');
+
+       btnText.textContent = 'Send Message';
+       btnIcon.classList.remove('hidden');
+       btnLoader.classList.add('hidden');
+     }, 5000);
+
+   } catch (error) {
+     console.error('EmailJS Error:', error);
+     alert(error.text || 'Failed to send message.');
+
+     submitBtn.disabled = false;
+     btnText.textContent = 'Send Message';
+     btnIcon.classList.remove('hidden');
+     btnLoader.classList.add('hidden');
+   }
   });
 }
 
