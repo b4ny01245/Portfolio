@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bert Ann Binasbas | IT Graduate • Software & Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+</head>
+
+<body>
+
+    <!-- Custom cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <span class="loader-text">Loading</span>
+            <div class="loader-bar">
+                <div class="loader-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>Biiey<span class="logo-bracket">/&gt;</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section id="home" class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-glow glow-1"></div>
+        <div class="hero-glow glow-2"></div>
+
+
+        <br><br><br>
+        <div class="hero-content">
+            <h1 class="hero-title reveal-up delay-1">
+                Hi, I'm <span class="highlight">Bert Ann Sevilla Binasbas</span>
+            </h1>
+            <div class="hero-role reveal-up delay-2">
+                <span class="role-prefix">—</span>
+                <span class="typed-text" id="typed"></span>
+                <span class="typed-cursor">|</span>
+            </div>
+            <p class="hero-desc reveal-up delay-3">
+            <p>I'm a dedicated <strong>Information Technology Graduate</strong> specializing in full-stack web
+                development, . My
+                passion lies in building practical software solutions and, AI-powered applications that solve
+                real-world problems.</p>
+            </p>
+            <br>
+            <div class="hero-actions reveal-up delay-4">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline">Let's Talk</a>
+            </div>
+            <div class="hero-stats reveal-up delay-5">
+                <div class="stat">
+                    <strong>5+</strong><span>Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <strong>4+</strong><span>Years Learning</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual reveal-right delay-2">
+            <div class="hero-card-wrapper">
+                <div class="hero-card">
+                    <div class="card-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fa fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-html">HTML5</div>
+                    <div class="floating-badge badge-css">CSS3</div>
+                    <div class="floating-badge badge-js">JS</div>
+                    <div class="card-code">
+                        <div class="code-line"><span class="c-key">const</span> <span class="c-var">dev</span> = {</div>
+                        <div class="code-line pl">name: <span class="c-str">"Bert Ann S. Binasbas"</span>,</div>
+                        <div class="code-line pl">role: <span class="c-str">"Web Developer"</span>,</div>
+                        <div class="code-line pl">loves: <span class="c-str">"clean code and productivity"</span></div>
+                        <div class="code-line">};</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <span>Scroll down</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">01 / About</span>
+                <h2 class="section-title">Who I Am</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-col reveal-left">
+                    <div class="about-img-frame">
+                        <div class="about-img-placeholder">
+                            <img src="ME.png" alt="Profile Picture">
+                        </div>
+                        <div class="img-decoration img-decoration-1"></div>
+                        <div class="img-decoration img-decoration-2"></div>
+                    </div>
+                </div>
+                <div class="about-text-col reveal-right">
+                    <h3 class="about-subtitle">Building the future, one line at a time.</h3>
+
+                    <p>
+                        I'm a dedicated and motivated <strong>Information Technology graduate</strong> with hands-on
+                        experience in
+                        <strong>full-stack web development, technical support, UI/UX design, quality assurance (QA), and
+                            system development</strong>
+                        gained through internship and academic projects. I enjoy creating <strong>user-focused web
+                            applications</strong>,
+                        solving technical challenges, collaborating with teams, and delivering practical software
+                        solutions that make a
+                        real-world impact.
+                    </p>
+
+                    <p>
+                        Passionate about <strong>AI-powered applications, modern web technologies, and continuous
+                            learning</strong>,
+                        I'm always exploring new tools and frameworks to improve my skills and build innovative,
+                        efficient, and
+                        meaningful digital experiences.
+                    </p>
+
+                    <p>
+                        When I'm not coding, you'll find me exploring emerging technologies, experimenting with new
+                        ideas, learning
+                        modern development practices, or working on personal projects that challenge me to grow as a
+                        developer.
+                    </p>
+
+                    <div class="about-tags">
+                        <span class="tag">Administrative Support</span>
+                        <span class="tag">Good at Communicating</span>
+                        <span class="tag">Problem Solver</span>
+                        <span class="tag">Fast Learner</span>
+                        <span class="tag">Great Observer</span>
+                        <span class="tag">Team Player</span>
+                        <span class="tag">Detail-Oriented</span>
+                    </div>
+                </div>
+                <a href="Binasbas_Resume.pdf" class="btn btn-primary" download>
+                    <i class="fa fa-download"></i>
+                    <span>Download CV</span>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section id="skills" class="skills section">
+        <div class="skills-bg"></div>
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">02 / Skills</span>
+                <h2 class="section-title">My Tech Stack</h2>
+                <p class="section-desc">Technologies I work with to build modern web applications</p>
+            </div>
+
+            <div class="skills-categories">
+                <div class="skill-category reveal-up">
+                    <h3 class="cat-title"><i class="fa fa-code"></i> Frontend and Design</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon html"><i class="fab fa-html5"></i></div>
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-level">
+                                <div class="level-fill" data-level="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon css"><i class="fab fa-css3-alt"></i></div>
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-level">
+                                <div class="level-fill" data-level="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon js"><i class="fab fa-js-square"></i></div>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-level">
+                                <div class="level-fill" data-level="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon responsive"><i class="fa fa-mobile-alt"></i></div>
+                            <span class="skill-name">Responsive</span>
+                            <div class="skill-level">
+                                <div class="level-fill" data-level="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon canva"><i class="fa fa-palette"></i></div>
+                            <span class="skill-name">Canva</span>
+                            <div class="skill-level">
+                                <div class="level-fill" data-level="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal-up delay-1">
+                    <h3 class="cat-title"><i class="fa fa-server"></i> Backend & Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon php"><i class="fab fa-php"></i></div>
+                            <span class="skill-name">PHP</span>
+                            <div class="skill-level">
+                                <div class="level-fill" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon github"><i class="fab fa-github"></i></div>
+                            <span class="skill-name">Github</span>
+                            <div class="skill-level">
+                                <div class="level-fill" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon db"><i class="fa fa-database"></i></div>
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-level">
+                                <div class="level-fill" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon node"><i class="fab fa-node-js"></i></div>
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-level">
+                                <div class="level-fill" data-level="40"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon visualstudio"><i class="fa-solid fa-code"></i></div>
+                            <span class="skill-name">VS Code</span>
+                            <div class="skill-level">
+                                <div class="level-fill" data-level="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal-up delay-2">
+                    <h3 class="cat-title"><i class="fa fa-palette"></i> Technical Suppor & Others</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <span class="skill-name">Basic Troubleshooting</span>
+                            <div class="skill-level">
+                                <div class="level-fill" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Networking</span>
+                            <div class="skill-level">
+                                <div class="level-fill" data-level="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Device Configuration</span>
+                            <div class="skill-level">
+                                <div class="level-fill" data-level="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">QA Testing</span>
+                            <div class="skill-level">
+                                <div class="level-fill" data-level="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">System Security</span>
+                            <div class="skill-level">
+                                <div class="level-fill" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AI-Assisted Development</span>
+                            <div class="skill-level">
+                                <div class="level-fill" data-level="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Generative Tools</span>
+                            <div class="skill-level">
+                                <div class="level-fill" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Netlify</span>
+                            <div class="skill-level">
+                                <div class="level-fill" data-level="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Firebase</span>
+                            <div class="skill-level">
+                                <div class="level-fill" data-level="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">03 / Projects</span>
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-desc">A selection of projects I've built and am proud of</p>
+            </div>
+
+            <div class="project-filters reveal-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="capstone">Capstone</button>
+            </div>
+
+            <div class="projects-grid">
+
+                <div class="project-card reveal-up" data-category="capstone">
+                    <div class="project-thumb" style="--grad: linear-gradient(135deg,#0f2027,#203a43,#2c5364)">
+                        <div class="project-num">01</div>
+                        <i class="fa fa-graduation-cap project-icon"></i>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-cat">Capstone</span>
+                            <span class="project-year">2025 - 2026</span>
+                        </div>
+                        <h3>Digital Discovery for Elderly People</h3>
+                        <p>Developed an educational web platform designed to improve digital literacy among the elders
+                            through
+                            interactive simulations, step-by-step tutorials, and online safety awareness materials.</p>
+                        <div class="project-tags">
+                            <span class="ptag">PHP</span>
+                            <span class="ptag">MySQL</span>
+                            <span class="ptag">HTML</span>
+                            <span class="ptag">CSS</span>
+                            <span class="ptag">Hosted in Netlify</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="plink"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="plink plink-primary"><i class="fa fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up delay-1" data-category="web">
+                    <div class="project-thumb" style="--grad: linear-gradient(135deg,#1a1a2e,#16213e,#0f3460)">
+                        <div class="project-num">02</div>
+                        <i class="fa fa-qrcode project-icon"></i>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-cat">Web App</span>
+                            <span class="project-year">2026</span>
+                        </div>
+                        <h3>BorrowSmart</h3>
+                        <p>Developed a QR-based asset management system that tracks the borrowing and return of office
+                            equipment, tools, and keys. Features include borrower tracking, return verification, and
+                            photo-proof
+                            submission.</p>
+                        <div class="project-tags">
+                            <span class="ptag">JavaScript</span>
+                            <span class="ptag">HTML</span>
+                            <span class="ptag">CSS3</span>
+                            <span class="ptag">Google Appscript</span>
+                            <span class="ptag">Google Sheet</span>
+                            <span class="ptag">Github</span>
+                            <span class="ptag">Firebase Auth</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="plink"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="plink plink-primary"><i class="fa fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up delay-2" data-category="web">
+                    <div class="project-thumb" style="--grad: linear-gradient(135deg,#141e30,#243b55,#0d7377)">
+                        <div class="project-num">03</div>
+                        <i class="fa fa-id-card project-icon"></i>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-cat">Web App</span>
+                        </div>
+                        <h3>CWTS Attendance Management System (RFID)</h3>
+                        <p>Developed an RFID-based attendance management system to automate attendance tracking for
+                            class/training sessions.</p>
+                        <div class="project-tags">
+                            <span class="ptag">JavaScript</span>
+                            <span class="ptag">HTML</span>
+                            <span class="ptag">CSS3</span>
+                            <span class="ptag">Google Appscript</span>
+                            <span class="ptag">Google Sheet</span>
+                            <span class="ptag">Github</span>
+                            <span class="ptag">RFID</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="plink"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="plink plink-primary"><i class="fa fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up delay-1" data-category="ui">
+                    <div class="project-thumb" style="--grad: linear-gradient(135deg,#1a0533,#4a0e8f,#6d28d9)">
+                        <div class="project-num">04</div>
+                        <i class="fa fa-hammer project-icon"></i>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-cat">Web App</span>
+                        </div>
+                        <h3>MINED - Personal Productivity System</h3>
+                        <p>Developing a personalized productivity platform featuring habit tracking, analytics,
+                            AI-assisted
+                            conversations, scheduling, and personal development monitoring.</p>
+                        <div class="project-tags">
+                            <span class="ptag">JavaScript</span>
+                            <span class="ptag">HTML</span>
+                            <span class="ptag">CSS</span>
+                            <span class="ptag">Firebase</span>
+                            <span class="ptag">Hosted in Netlify</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="plink"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="plink plink-primary"><i class="fa fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up delay-2" data-category="web">
+                    <div class="project-thumb" style="--grad: linear-gradient(135deg,#0a3d0a,#1a5c1a,#186a3b)">
+                        <div class="project-num">05</div>
+                        <i class="fa fa-robot project-icon"></i>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-cat">Web App</span>
+                        </div>
+                        <h3>BEH - Personal AI Application</h3>
+                        <p>Building an AI-powered assistant that provides personalized guidance, profile-based
+                            responses, and daily
+                            life support.</p>
+                        <div class="project-tags">
+                            <span class="ptag">JavaScript</span>
+                            <span class="ptag">HTML</span>
+                            <span class="ptag">CSS</span>
+                            <span class="ptag">Firebase</span>
+                            <span class="ptag">Hosted in Netlify</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="plink"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="plink plink-primary"><i class="fa fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up delay-3" data-category="web">
+                    <div class="project-thumb" style="--grad: linear-gradient(135deg,#1a0000,#5c1a1a,#8b2c2c)">
+                        <div class="project-num">06</div>
+                        <i class="fa fa-users project-icon"></i>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="project-cat">Web App</span>
+                        </div>
+                        <h3>My Homies - Group Social Platform</h3>
+                        <p>Developing a group application that combines social interaction, gamification, streaks, and
+                            mission-based
+                            activities for community engagement.</p>
+                        <div class="project-tags">
+                            <span class="ptag">JavaScript</span>
+                            <span class="ptag">HTML</span>
+                            <span class="ptag">CSS</span>
+                            <span class="ptag">Firebase</span>
+                            <span class="ptag">Hosted in Netlify</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="plink"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="plink plink-primary"><i class="fa fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── ACHIEVEMENTS ── -->
+    <section id="achievements" class="achievements section">
+        <div class="achievements-bg"></div>
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">04 / Achievements</span>
+                <h2 class="section-title">Milestones & Recognition</h2>
+            </div>
+
+            <div class="achievements-grid">
+
+                <div class="ach-card reveal-up delay-2">
+                    <div class="ach-icon-wrap">
+                        <i class="fa fa-medal"></i>
+                    </div>
+                    <div class="ach-content">
+                        <h3>Cumlaude</h3>
+                        <p>Graduated with Latin Honors in recognition of outstanding academic performance, consistent
+                            dedication, and excellence throughout the Bachelor of Science in Information Technology
+                            program.</p>
+                        <span class="ach-date">2025–2026</span>
+                    </div>
+                </div>
+
+                <div class="ach-card reveal-up delay-3">
+                    <div class="ach-icon-wrap">
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="ach-content">
+                        <h3>Dean's Lister</h3>
+                        <p>Consistently maintained Dean's List standing with a GWA of 1.53 throughout the academic
+                            program.</p>
+                        <span class="ach-date">2023–2024</span>
+                    </div>
+                </div>
+
+                <div class="ach-card reveal-up delay-3">
+                    <div class="ach-icon-wrap">
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="ach-content">
+                        <h3>Dean's Lister</h3>
+                        <p>Consistently maintained Dean's List standing with a GWA of 1.40 throughout the academic
+                            program.</p>
+                        <span class="ach-date">2024–2025</span>
+                    </div>
+                </div>
+
+                <div class="ach-card reveal-up delay-1">
+                    <div class="ach-icon-wrap">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <div class="ach-content">
+                        <h3>ITSO Secretary</h3>
+                        <p>Served as Secretary of the Information Technology Student Organization (ITSO), managing
+                            organizational records, documentation, and communications while supporting activities for
+                            over 500 members.
+                        </p>
+                        <span class="ach-date">2024-2025</span>
+                    </div>
+                </div>
+
+                <div class="ach-card reveal-up delay-1">
+                    <div class="ach-icon-wrap">
+                        <i class="fa fa-award"></i>
+                    </div>
+                    <div class="ach-content">
+                        <h3>Service Awardee</h3>
+                        <p>Recognized for outstanding service, dedication, and meaningful contributions to the
+                            university and the Information Technology community over two consecutive academic years.
+                        </p>
+                        <span class="ach-date">2023–2026</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline-section">
+                <h3 class="timeline-title reveal-up">My Journey</h3>
+                <div class="timeline">
+                    <div class="timeline-item reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="tl-date">2022</span>
+                            <h4>Started IT Degree</h4>
+                            <p>Enrolled in BS Information Technology, discovered a passion for web development in my
+                                first programming class.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right reveal-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="tl-date">2023</span>
+                            <h4>First Real Project</h4>
+                            <p>Built and deployed my first full-stack web app for a school activity</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="tl-date">2024-2025</span>
+                            <h4>ITSO Leadership Journey </h4>
+                            <p>Began my leadership journey after being elected Secretary of the Information Technology
+                                Student Organization, contributing to student engagement and organizational development.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right reveal-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="tl-date">2025-2026</span>
+                            <h4>Capstone Project & Internship</h4>
+                            <p>Successfully completed my capstone project, <strong>Digital Discovery for Elderly
+                                    People</strong>, while beginning my internship at Wilson Works Trading Inc., where I
+                                contributed to software development, technical support, and the creation of the
+                                BorrowSmart asset management system.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="tl-date">2026</span>
+                            <h4>Graduation</h4>
+                            <p>Graduated with a Bachelor of Science in Information Technology, earning <strong>Cum
+                                    Laude</strong> honors. Currently seeking entry-level opportunities in software
+                                development, web development, and IT support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-label">05 / Contact</span>
+                <h2 class="section-title">Let's Build Something</h2>
+                <p class="section-desc">I'm currently open to freelance work and full-time opportunities. Let's talk!
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <div class="contact-item">
+                        <div class="ci-icon"><i class="fa fa-envelope"></i></div>
+                        <div class="ci-text">
+                            <span class="ci-label">Email</span>
+                            <a href="mailto:bertaangela.02@gmail.com">bertaangela02@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="ci-icon"><i class="fa fa-phone"></i></div>
+                        <div class="ci-text">
+                            <span class="ci-label">Phone</span>
+                            <a href="tel:+1234567890">+63 938 320 0900</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="ci-icon"><i class="fa fa-map-marker-alt"></i></div>
+                        <div class="ci-text">
+                            <span class="ci-label">Locations</span>
+                            <span>Eastern Samar, Philippines</span><br>
+                            <span>Quezon City, Philippines</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/b4ny01245" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="www.linkedin.com/in/bert-ann-binasbas-69aa95363" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/bii.ey25" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+
+                    <div class="availability-card">
+                        <div class="avail-dot"></div>
+                        <div>
+                            <strong>Available for Hire</strong>
+                            <p>Open to full-time, part-time & freelance roles</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrap reveal-right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fname">Full Name</label>
+                                <input type="text" id="fname" name="name" placeholder="John Dela Cruz" required />
+                                <span class="form-error" id="nameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="femail">Email Address</label>
+                                <input type="email" id="femail" name="email" placeholder="john@example.com" required />
+                                <span class="form-error" id="emailError"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="fmessage">Message</label>
+                            <textarea id="fmessage" name="message" rows="5"
+                                placeholder="Tell me about your project or opportunity..." required></textarea>
+                            <span class="form-error" id="msgError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <i class="fa fa-paper-plane"></i>
+                            <div class="btn-loader hidden"><i class="fa fa-spinner fa-spin"></i></div>
+                        </button>
+                        <div class="form-success hidden" id="formSuccess">
+                            <i class="fa fa-check-circle"></i>
+                            Message sent! I'll reply within 24 hours.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <a href="#home" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>Biiey<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-copy">© 2026 Bii Ey </p>
+                <a href="#home" class="back-to-top" id="backTop" aria-label="Back to top">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
